@@ -1,0 +1,51 @@
+/**
+* Template Name: PhotoFolio
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
+/* Fonts */
+/* Estilo para la lista de reproducción */
+/* Estilo para la tabla de lista de reproducción */
+table.audio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.audio-table th,
+table.audio-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table.audio-table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para los elementos de audio */
+.audio-track {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.audio-track h2 {
+  margin-top: 10px;
+}
+
+.audio-track img {
+  max-width: 100%;
+}
+
+/* Estilo para los controles de audio */
+audio {
+  width: 100%;
+  max-width: 300px;
+}
