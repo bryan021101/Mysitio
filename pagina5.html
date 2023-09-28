@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Playlist- Store</title>
+    <link rel="stylesheet" href="CSS/java.css">
+</head>
+<body>
+    <header class="site-header sticky-top py-1">
+        <!-- ... (código del encabezado) ... -->
+    </header>
+
+    <main>
+        <!-- ... (código principal) ... -->
+        
+        <div class="col-6 col-md">
+            <h5>Lista de músicas</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio1')">Capital Cities Safe And Sound</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio2')">Clean Bandit Rather Be ft Jess Glynne</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio3')">Clean Bandit Rockabye feat Sean Paul AnneMarie</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio4')">Coldplay A Sky Full Of Stars</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio5')">DNCE Cake By The Ocean</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio6')">Doja Cat Say So</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio7')">Dua Lipa Love Again</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio8')">Elton John Dua Lipa Cold Heart PNAU</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio9')">Imagine Dragons Enemy without</a></li>
+                <li><a class="link-secondary" href="#" onclick="playAudio('audio10')">Lizzo About Damn Time</a></li>
+                <!-- Repite lo mismo para otros elementos de la lista -->
+            </ul>
+        </div>
+       
+        <div class="audio-track">
+          <h2>Capital Cities  Safe And Sound</h2>
+          <img src="img/musica/img1.jpg" alt="Imagen de la canción 1">
+          <audio id="audio1" controls>
+              <source src="audio/Capital Cities  Safe And Sound Official Music Video.mp3" type="audio/mpeg">
+              Tu navegador no admite el elemento de audio.
+          </audio>
+      </div>
+        <div class="audio-track">
+  <h2>Clean Bandit  Rather Be ft Jess Glynne</h2>
+  <img src="img/musica/img2.jpg" alt="Imagen de la canción 2">
+  <audio id="audio2" controls>
+      <source src="audio/Clean Bandit  Rather Be ft Jess Glynne Official Video.mp3" type="audio/mpeg">
+      Tu navegador no admite el elemento de audio.
+  </audio>
+</div>
+        
+      <tr><div class="audio-track">
+        <h2>Clean Bandit  Rockabye feat Sean Paul  AnneMarie</h2>
+        <img src="img/musica/img3.jpg" alt="Imagen de la canción 2">
+        <audio id="audio3" controls>
+            <source src="audio/Clean Bandit  Rockabye feat Sean Paul  AnneMarie Official Video.mp3" type="audio/mpeg">
+            Tu navegador no admite el elemento de audio.
+        </audio>
+    </div>
+    <div class="audio-track">
+      <h2>Coldplay  A Sky Full Of Stars</h2>
+      <img src="img/musica/img4.jpg" alt="Imagen de la canción 2">
+      <audio id="audio4" controls>
+          <source src="audio/Coldplay  A Sky Full Of Stars Official Video.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+      </audio>
+  </div>
+   
+  <div class="audio-track">
+    <h2>DNCE  Cake By The Ocean</h2>
+    <img src="img/musica/img5.png" alt="Imagen de la canción 2">
+    <audio id="audio5" controls>
+        <source src="audio/DNCE  Cake By The Ocean.mp3" type="audio/mpeg">
+        Tu navegador no admite el elemento de audio.
+    </audio>
+</div>
+
+<div class="audio-track">
+  <h2>Doja Cat  Say So</h2>
+  <img src="img/musica/img6.jpg" alt="Imagen de la canción 2">
+  <audio id="audio6" controls>
+      <source src="audio/Doja Cat  Say So Official Video.mp3" type="audio/mpeg">
+      Tu navegador no admite el elemento de audio.
+  </audio>
+</div>
+
+
+<div class="audio-track">
+<h2>Dua Lipa  Love Again </h2>
+<img src="img/musica/img7.png"Imagen de la canción 2">
+<audio id="audio7" controls>
+    <source src="audio/Dua Lipa  Love Again Official Music Video.mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+</audio>
+</div>
+
+
+<div class="audio-track">
+<h2>Elton John Dua Lipa  Cold Heart PNAU</h2>
+<img src="img/musica/img8.jpg" alt="Imagen de la canción 2">
+<audio id="audio8" controls>
+    <source src="audio/Elton John Dua Lipa  Cold Heart PNAU Remix Official Video (1).mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+</audio>
+</div>
+
+<div class="audio-track">
+<h2>Imagine Dragons  Enemy without</h2>
+<img src="img/musica/img9.jpg" alt="Imagen de la canción 2">
+<audio id="audio9"controls>
+    <source src="audio/Imagine Dragons  Enemy without rap  JID  Original Imagine Dragons Version.mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+</audio>
+</div>
+
+<div class="audio-track">
+<h2>Lizzo  About Damn Time</h2>
+<img src="img/musica/img10.jpg" alt="Imagen de la canción 2">
+<audio id="audio10"controls>
+    <source src="audio/Lizzo  About Damn Time  Español  Lyrics  video oficial.mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+</audio>
+</div>
+        </table>
+
+    </main>
+
+    <footer class="container py-5">
+        <!-- ... (código del pie de página) ... -->
+    </footer>
+
+    <!-- Agrega el siguiente script JavaScript para controlar la reproducción de audio -->
+    <script>
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>
+
+        

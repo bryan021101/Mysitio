@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Cocina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- CDN de Bootstrap -->
+    <link rel="stylesheet" href="CSS/PhotoFolio/assets/css/main.css"> <!-- Agrega tu archivo CSS personalizado aquí -->
+</head>
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">BLOG DE COCINA</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="#">Sign out</a>
+          </div>
+        </div>
+      </header>
+
+    <h1><span style="font-family: 'Magic Retro', cursive;">Cocina Fácil</span></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pescados y Mariscos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recetas de Carne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cócteles y Bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Postres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recetas de Pasta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ensaladas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mariscos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pan y Bollería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recetas de Verduras</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5">
+        <section class="menu-vertical">
+            <div class="categoria" style="position: relative; color: white; padding: 10px; text-align: center; width: 100%; height: 150px; background-image: url('img/comida.jpg'); background-size: cover; background-position: center;">
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                  RECETAS DE COCINA
+                  <h1>
+
+                  </h1>
+              </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <article class="card">
+                    <div class="categoria">Platos salados</div>
+                    <img src="img/Recetas/imagen1.avif" alt="Imagen de la receta 1" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">LOMO DE CERDO AL CHIRRI</h3>
+                    <h3>__________________</h3>
+                        <h4 class="card-title">INGREDIENTES</h4>
+                        <p class="card-text" id="ingredientes1">
+                            - Lomo de cerdo.
+                            - Aceite de oliva.
+                            - Vino blanco.
+                            - Ajo.
+                            - Perejil.
+                            - Clavo.
+                            - Orégano.
+                            - Pimentón.
+                            - Pimienta.
+                        </p>
+                        <button onclick="mostrarIngredientes('ingredientes1', 'preparacion1')">Leer más</button>
+                        <div id="preparacion1" style="display: none;">
+                            <h4 class="card-title">PREPARACION</h4>
+                            <p class="card-text">
+                                SE dora el lomo entero en una cazuela con el aceite de oliva. Cuando está dorado se aliña con el ajo, perejil, orégano, 2 clavos, pimienta molida y un poco de pimentón dulce.
+                                Se cubre todo con vino blanco y agua a partes iguales, y se pone a hervir hasta que esté tierno. Se deja enfriar y se corta en láminas finas sirviendo con su salsa o bien con una rociada de aceite de oliva y pimentón.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+                <article class="card">
+                    <div class="categoria">Platos salados</div>
+                    <img src="img/Recetas/imagen2.png" alt="Imagen de la receta 1" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">TORTILLA DE ESPINACAS Y PIÑONES</h3>
+                    <h3>__________________</h3>
+                        <h4 class="card-title">INGREDIENTES</h4>
+                        <p class="card-text" id="ingredientes2">
+                            -- Espinacas.
+                            - Piñones.
+                            - Dátiles.
+                            - Cebolla.
+                            - Huevos.
+                            - Aceite de oliva.
+                        </p>
+                        <button onclick="mostrarIngredientes('ingredientes2', 'preparacion2')">Leer más</button>
+                        <div id="preparacion2" style="display: none;">
+                            <h4 class="card-title">PREPARACION</h4>
+                            <p class="card-text">
+                                Se cuecen las espinacas y aparte se sofríe la cebolla con los dátiles y los piñones añadiendo posteriormente las espinacas luego batimos los huevos y se cuaja la tortilla con una pizca de sal.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <article class="card">
+                    <div class="categoria">Platos dulces</div>
+                    <img src="img/Recetas/imagen3.jpg" alt="Imagen de la receta 1" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">MANZANA A LA CREMA</h3>
+                    <h3>__________________</h3>
+                        <h4 class="card-title">INGREDIENTES</h4>
+                        <p class="card-text" id="ingredientes3">
+                            - Espinacas.
+                            - Piñones.
+                            - Dátiles.
+                            - Cebolla.
+                            - Huevos.
+                            - Aceite de oliva.
+                        </p>
+                        <button onclick="mostrarIngredientes('ingredientes3', 'preparacion3')">Leer más</button>
+                        <div id="preparacion3" style="display: none;">
+                            <h4 class="card-title">PREPARACION</h4>
+                            <p class="card-text">
+                                Pelar y cortar las manzanas. Cocerlas en agua con abundante azúcar. Reservarlas. Se baten los huevos, y se mezclan con el azúcar y la harina. Cuando la leche haya hervido con la canela, el limón y el licor, se le añade poco a poco con un colador para que no se corten las yemas. Se mezclan bien, poniéndolos al fuego hasta que la crema espese. Se ponen en una 
+                                fuente las manzanas bien repartidas y se les vierte la crema por encima. Se dejan enfriar y se sirven </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <article class="card">
+                <div class="categoria">Platos dulces</div>
+                <img src="img/Recetas/imagen4.JPG" alt="Imagen de la receta 1" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">BORRACHUELOS AL HORNO</h3>
+                    <h3>____________________</h3>
+                    <h4 class="card-title">INGREDIENTES</h4>
+                    <p class="card-text" id="ingredientes4">
+                        •	1 litro de aceite de oliva
+                        •	375 cc. De vino blanco
+                        •	6 cucharadas de azúcar
+                        •	1 sobre de levadura Royal
+                        •	1 puñado de ajonjolí o matalahúva (al gusto)
+                        •	2 Kg. de harina
+                        
+                    </p>
+                    <button onclick="mostrarIngredientes('ingredientes4', 'preparacion4')">Leer más</button>
+                    <div id="preparacion4" style="display: none;">
+                        <h4 class="card-title">PREPARACION</h4>
+                        <p class="card-text">
+                            Se mezclan todos los ingredientes y se agrega la harina al final.
+                            Amasar y extender bien con las manos o con el rodillo, hasta conseguir un grosor de aproximadamente de un centímetro y medio.
+                            Se corta con un molde en forma de estrella, corazón, luna, etc.
+                            Hornear en tablas de horno panadero hasta que estén bien cocidos.
+                            Emborrizar en caliente con azúcar                        
+                        </p>
+                            </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+        </div>
+        
+      
+        </section>
+
+        <section class="destacada">
+            <div class="categoria" style="position: relative; color: white; padding: 10px; text-align: center; width: 100%; height: 150px; background-image: url('img/Recetas/fondo1.jpg'); background-size: cover; background-position: center;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                   RECETAS DESTACADAS
+                    <h1>
+  
+                    </h1>
+                </div>
+            </div>
+           <div class="col-md-6 col-lg-3 mb-4">
+                <article class="card">
+                    <div class="categoria">Receta de carne</div>
+                    <img src="img/Recetas/imagen5.JPG" alt="Imagen de la receta 1" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">VENADO EN ADOBO  </h3>
+                        <h4> (Solomillo de ciervo)</h4>
+                    <h3>__________________</h3>
+                        <h4 class="card-title">INGREDIENTES</h4>
+                        <p class="card-text" id="ingredientes5">
+                            -Carne pulpa de venado (lomo o solomillo), sal, ajos, tomillo, romero, orégano, laurel, pimienta en grano, un pizca de azafrán y otra de cominos, cáscara de limón y un buen vino tinto.
+                        </p>
+                        <button onclick="mostrarIngredientes('ingredientes5', 'preparacion5')">Leer más</button>
+                        <div id="preparacion5" style="display: none;">
+                            <h4 class="card-title">PREPARACION</h4>
+                            <p class="card-text">
+                                La carne del venado se aliña con una majada de ajos y demás especias, se baña con el vino y se añaden la cáscara de limón y unos ramilletes de romero y tomillo. Se deja marinar uno, dos o tres días ( según el tamaño de la pieza, menos si es gabato) y luego se sofríe con manteca de cerdo y el caldo del adobo. Cuando reduzca al máximo se ponen los trozos en un recipiente de barro vidriado bien cubiertos con la grasa . 
+                                Se presenta en frío, fileteado y con toques de manteca. La compaña, un buen tinto y unas aceitunas, de Jaén por supuesto.
+                            </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <article class="card">
+                <div class="categoria">Ensaladas</div>
+                <img src="img/Recetas/imagen6.JPG" alt="Imagen de la receta 1" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">ENSALADA DE NARANJA  </h3>
+                    <h4> (Solomillo de ciervo)</h4>
+                <h3>__________________</h3>
+                    <h4 class="card-title">INGREDIENTES</h4>
+                    <p class="card-text" id="ingredientes6">
+                        •	Naranjas 
+                        •	Bacalao desmigado
+                        •	Huevo cocido
+                        •	Aceitunas negras
+                        •	Cebolletas
+                        •	Aceite de oliva
+                                               
+                        </p>
+                    <button onclick="mostrarIngredientes('ingredientes6', 'preparacion6')">Leer más</button>
+                    <div id="preparacion6" style="display: none;">
+                        <h4 class="card-title">PREPARACION</h4>
+                        <p class="card-text">
+                            Picar todos los ingredientes y mezclar. (No pone sal, porque lleva bacalao).</div>
+                </div>
+            </article>
+        </div>
+    </div>
+                <!-- Agrega más recetas destacadas aquí -->
+            </div>
+        </section>
+        <script>
+            function mostrarIngredientes(ingredientesId, preparacionId) {
+                var ingredientes = document.getElementById(ingredientesId);
+                var preparacion = document.getElementById(preparacionId);
+                var boton = ingredientes.parentElement.querySelector("button");
+        
+                if (ingredientes.style.display === "none") {
+                    ingredientes.style.display = "block";
+                    preparacion.style.display = "none";
+                    boton.innerHTML = "Leer más";
+                } else {
+                    ingredientes.style.display = "none";
+                    preparacion.style.display = "block";
+                    boton.innerHTML = "Leer menos";
+                }
+            }
+        </script>
+        
+    </main>
+    <footer>
+        <!-- Agrega contenido del pie de página aquí -->
+    </footer>
+    <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
